@@ -1,0 +1,96 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* Container da Empresa */
+.empresa-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem e legenda */
+.empresa-imagem {
+    position: relative;
+    width: 45%;
+}
+
+.empresa-imagem img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.empresa-legenda {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.empresa-legenda h4 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.empresa-legenda p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+}
+
+/* Texto */
+.empresa-texto {
+    width: 50%;
+    padding: 20px;
+}
+
+.empresa-texto h2 {
+    font-size: 2rem;
+    color: #ff7300;
+    margin-bottom: 10px;
+}
+
+.empresa-texto hr {
+    width: 50px;
+    border: 2px solid #ff7300;
+    margin: 10px 0;
+}
+
+.empresa-texto p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Contactos */
+.contact {
+    text-align: center;
+    padding: 40px;
+    background: #222;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: white;
+}

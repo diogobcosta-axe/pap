@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Serviço - Serralharia Silva, Bessa & Filhos</title>
+    <link rel="stylesheet" href="estruturaPAP.css"> <!-- Importação do CSS principal -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff7300;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e66100;
+        }
+        #mensagem {
+            font-size: 14px;
+            margin-top: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .btn-voltar {
+            margin-top: 15px;
+            display: block;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .btn-voltar:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Solicitar Serviço Online</h2>
+        <form id="formServico">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <select id="servico">
+                <option value="consulta">Consulta</option>
+                <option value="orçamento">Orçamento</option>
+                <option value="suporte">Suporte Técnico</option>
+            </select>
+            <button type="submit">Enviar Pedido</button>
+        </form>
+        <p id="mensagem"></p>
+        <a href="PAP.html" class="btn-voltar">Voltar à Página Principal</a> <!-- Botão de Voltar -->
+    </div>
+
+    <script>
+        document.getElementById("formServico").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let nome = document.getElementById("nome").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let servico = document.getElementById("servico").value;
+            let mensagem = document.getElementById("mensagem");
+
+            if (!nome || !email) {
+                mensagem.innerHTML = "⚠️ Preencha todos os campos!";
+                mensagem.style.color = "red";
+            } else {
+                mensagem.innerHTML = `✅ Obrigado, ${nome}! Seu pedido de ${servico} foi enviado.`;
+                mensagem.style.color = "green";
+            }
+            mensagem.style.opacity = 1;
+        });
+    </script>
+
+</body>
+</html>
