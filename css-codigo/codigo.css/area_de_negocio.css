@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 30px 20px 10px;
+    background-color: #f59e0b;
+    color: white;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .btn-voltar {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 15px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn-voltar:hover {
+    background: #444;
+  }
+  
+  /* Botão extra */
+  .btn-area {
+    display: inline-block;
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .btn-area:hover {
+    background-color: #cc7a00;
+  }
+  
+  /* Layout de áreas */
+  .areas-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+  }
+  
+  .area {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .area img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  .area h2 {
+    color: #ff9900;
+    margin-top: 15px;
+  }
+  
+  .area p {
+    color: #444;
+  }
+  

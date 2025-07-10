@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Solicitar Serviço</title>
+</head>
+<body>
+  <h2>Formulário de Pedido</h2>
+  <form method="POST" action="base_dados.php">
+    <input type="text" name="nome" placeholder="Nome" required><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+    <select name="servico" required>
+      <option value="consulta">Consulta</option>
+      <option value="orçamento">Orçamento</option>
+    </select><br>
+    <button type="submit">Enviar Pedido</button>
+  </form>
+</body>
+</html>

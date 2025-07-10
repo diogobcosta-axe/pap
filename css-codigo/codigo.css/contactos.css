@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #fd9708;
+    color: white;
+    padding: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  .contacto-container {
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  footer {
+    background-color: #fa960a;
+    color: white;
+    padding: 15px;
+  }
+  
+  /* Estilo do botão caso queiras em outras páginas */
+  .btn-contacto {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f59e0b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 20px auto;
+    transition: 0.3s;
+  }
+  
+  .btn-contacto:hover {
+    background-color: #d97706;
+  }
+  
